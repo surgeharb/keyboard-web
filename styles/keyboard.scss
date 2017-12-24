@@ -1,0 +1,73 @@
+.keyboard-main {
+  top: 25%;
+  width: 45%;
+  padding: 0 1.5rem;
+  position: absolute;
+
+  #keyboard-top {
+    margin-bottom: 2rem;
+  }
+
+  .keyboard-key {
+    padding: 0;
+    width: 100%;
+    display: block;
+    margin: 5px 3px;
+    font-size: .9rem;
+    background: blue;
+    &.lowercase {
+      text-transform: lowercase;
+    }
+  }
+}
+
+.keyboard-wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  &.column {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    float: left;
+  }
+  .modal-header,
+  .modal-footer {
+    flex: 1 0 0;
+  }
+  form {
+    flex: 4 0 0;
+  }
+  .title.row {
+    flex: 1 0 0;
+  }
+  .grid {
+    flex: 3 0 0;
+    padding-bottom: 5rem;
+  }
+  .item, .key-1 {
+    flex: 1 0 0;
+  }
+  .item-2, .key-2 {
+    flex: 2 0 0;
+  }
+  .item-3, .key-3 {
+    flex: 3 0 0;
+  }
+  .item-4, .key-4 {
+    flex: 4 0 0;
+  }
+  .item-5, .key-5 {
+    flex: 5 0 0;
+  }
+  .item-5-5, .key-5-5 {
+    flex: 5.5 0 0;
+  }
+}
