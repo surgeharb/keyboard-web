@@ -19,6 +19,7 @@
 
     SmartKeys.init('#keyboard', options);
 
+    $('input:first-child').focus();
   });
 
 }));
